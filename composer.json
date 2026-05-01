@@ -1,0 +1,18 @@
+{
+  "name": "simpod/skill-ext-ds",
+  "description": "AI agent skill for using PHP ext-ds collection types idiomatically.",
+  "type": "ai-agent-skill",
+  "license": "MIT",
+  "homepage": "https://github.com/simPod/skill-ext-ds",
+  "require": {
+    "php": ">=8.2"
+  },
+  "support": {
+    "issues": "https://github.com/simPod/skill-ext-ds/issues",
+    "source": "https://github.com/simPod/skill-ext-ds"
+  },
+  "suggest": {
+    "ext-ds": "Required by projects that use the data structures described by this skill; pin the major version because v1 and v2 are not API-compatible.",
+    "netresearch/composer-agent-skill-plugin": "Discovers and registers Composer packages of type ai-agent-skill."
+  }
+}
