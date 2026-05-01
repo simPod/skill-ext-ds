@@ -1,24 +1,26 @@
 # simpod/skill-ext-ds
 
-Composer-distributed AI agent skill for using PHP `ext-ds` collection types idiomatically.
+AI agent skills for PHP `ext-ds`.
+
+This repository contains two skills:
+
+- `php-ext-ds-v1`: `ext-ds:^1` API notes.
+- `php-ext-ds-v2`: `ext-ds:^2` API notes.
 
 ## Install
 
-Install the Composer agent skill plugin in the consuming project:
+With `skills`:
 
 ```sh
-composer require netresearch/composer-agent-skill-plugin
+npx skills add simPod/skill-php-ext-ds --skill php-ext-ds-v1
+npx skills add simPod/skill-php-ext-ds --skill php-ext-ds-v2
 ```
 
-Install this skill package:
+With `dotagents`:
 
 ```sh
-composer require simpod/skill-ext-ds
+npx @sentry/dotagents init
+npx @sentry/dotagents add simPod/skill-php-ext-ds --name php-ext-ds-v1
+npx @sentry/dotagents add simPod/skill-php-ext-ds --name php-ext-ds-v2
+npx @sentry/dotagents install
 ```
-
-The package is type `ai-agent-skill`, so the plugin discovers the root `SKILL.md` automatically.
-
-## Contents
-
-- `SKILL.md`: agent instructions for choosing and using `Ds\Vector`, `Ds\Map`, `Ds\Set`, `Ds\Stack`, `Ds\Queue`, `Ds\Deque`, and `Ds\PriorityQueue`.
-- `composer.json`: Composer package metadata for Packagist distribution.

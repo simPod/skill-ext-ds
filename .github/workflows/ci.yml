@@ -21,4 +21,4 @@ jobs:
           node-version: '22'
 
       - name: Check Markdown formatting
-        run: npx --yes prettier --check "**/*.md"
+        run: npx --yes prettier --check "**/*.md" "skills/**/*.md"
